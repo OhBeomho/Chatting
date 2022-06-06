@@ -4,13 +4,17 @@
   "description": "Chatting app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --mode development"
   },
   "author": "OhBeomho",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
     "moment": "^2.29.3",
-    "socket.io": "^4.5.1"
+    "socket.io": "^4.5.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
   }
 }
