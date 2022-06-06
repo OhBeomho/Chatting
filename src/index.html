@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="name-input">
+        <div style="font-size: 30px; margin-top: 100px;">채팅</div>
+        <div style="font-size: 12px; margin-top: 20px;">사용자명을 입력해 주세요.</div>
+        <input type="text" class="username" maxlength="50"><br>
+        <button class="enter-chatting" style="margin-top: 7px;">채팅 시작</button>
+    </div>
+    <div class="chatting">
+        <div class="top">
+            <div style="font-size: 30px;">채팅</div>
+        </div>
+        <div class="middle">
+            <ul class="messages">
+            </ul>
+        </div>
+        <div class="bottom">
+            <input type="text" class="message-input">
+            <button class="send">전송</button>
+        </div>
+    </div>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+</html>
